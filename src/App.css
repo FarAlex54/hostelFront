@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.body{
+    background:rgb(235, 224, 247);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-header {
+    border-bottom: 0 none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.modal-footer {
+    border-top: 0 none !important;
+}
+.modal_main{
+    background-color: rgba(85,160,226,0.5)!important;
+}
+.modal_tabs{
+    opacity:1;
+    border-radius: 10% 10% 0 0;
+    border-bottom: 0 none !important; 
+}
+.coloredTab {
+    background-color:rgba(85,160,226,1)!important;
   }
+
+/* .tabActive{
+    background-color: red!important; 
+}
+.tabNotActive{
+    background-color: rgba(85,160,226,0.5)!important; 
+}
+ */
+
+.banner{
+    background: linear-gradient(270deg,rgba(31,27,46,0),rgba(31,27,46,.72) 50%,#1f1b2e);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0.5;
+}
+.banner_logo{
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    width: 35%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardForRooms_header{
+    color:white;
+    background: rgb(54, 54, 54, 0.7);
+    height:5%;
+    border-radius: 5% 5% 0 0;
+    text-align: center;
+    z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.cardForRoom{
+    border-color: black;
+    box-shadow: 3px 3px 10px black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardForBooking{
+    border-color: black;
+    box-shadow: 3px 3px 10px black;
+}
+.cardForRoom:hover{
+    box-shadow: 3px 3px 10px black;
+    transition: 0.5s ease-out;
+    margin: -.2em;
 }
